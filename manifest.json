@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "gcp-benri-extension",
+  "version": "0.0.1",
+  "action": { "default_popup": "index.html" },
+  "content_scripts": [
+    {
+      "matches": ["https://console.cloud.google.com/*"],
+      "js": ["src/colorize.ts"]
+    }
+  ],
+  "permissions": ["storage"]
+}
